@@ -1,0 +1,185 @@
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga
+$ git init
+Initialized empty Git repository in C:/2030605-MarcosZuniga/.git/
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git remote add origin "https://github.com/Marcos-3008/20230605-MarcosZuniga.git"
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git remote -v
+origin  https://github.com/Marcos-3008/20230605-MarcosZuniga.git (fetch)
+origin  https://github.com/Marcos-3008/20230605-MarcosZuniga.git (push)
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ touch comandos.txt
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ touch main.js
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ touch index.html
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos.txt
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git add .
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos.txt
+        new file:   index.html
+        new file:   main.js
+
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git commit -m "commit 01 de Marcos Zuniga"
+[main (root-commit) b2996ed] commit 01 de Marcos Zuniga
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 247 bytes | 247.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Marcos-3008/20230605-MarcosZuniga.git
+ * [new branch]      main -> main
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ touch Hardware/resumen.txt Software/resumen.txt SeguridadInformatica/resumen.txt
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        SeguridadInformatica/
+        Software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ git add .
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hardware/resumen.txt
+        new file:   SeguridadInformatica/resumen.txt
+        new file:   Software/resumen.txt
+
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ git commit -m "commit 02 de Marcos Zuniga"
+[feature 0a39f48] commit 02 de Marcos Zuniga
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Marcos-3008/20230605-MarcosZuniga/pull/new/featu
+re
+remote:
+To https://github.com/Marcos-3008/20230605-MarcosZuniga.git
+ * [new branch]      feature -> feature
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git mv main.js resumenHardware.txt
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git index.html resumenSoftware.txt
+git: 'index.html' is not a git command. See 'git --help'.
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git mv index.html resumenSofware.txt
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    index.html -> resumenHardware.txt
+        renamed:    main.js -> resumenSofware.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   resumenHardware.txt
+        modified:   resumenSofware.txt
+
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git add .
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git commit -m "commit 03 de Marcos Zuniga"
+[main 39709c8] commit 03 de Marcos Zuniga
+ 4 files changed, 6 insertions(+)
+ delete mode 100644 index.html
+ delete mode 100644 main.js
+ create mode 100644 resumenHardware.txt
+ create mode 100644 resumenSofware.txt
+
+Marcos@DESKTOP-6VHKG61 MINGW64 /c/2030605-MarcosZuniga (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 430 bytes | 430.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Marcos-3008/20230605-MarcosZuniga.git
+   b2996ed..39709c8  main -> main
